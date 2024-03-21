@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.API", "NSFlights.API\NSFlights.API.csproj", "{6D2EC02F-55AE-4E60-B046-FF36F818DEFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.BLL", "NSFlights.BLL\NSFlights.BLL.csproj", "{46A04F71-8330-4D00-8F4E-F320B101ABC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.IOC", "NSFlights.IOC\NSFlights.IOC.csproj", "{FF4B0FB5-7BC1-47F0-9966-48F740FEDEDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.DAL", "NSFlights.DAL\NSFlights.DAL.csproj", "{30C29CC4-948E-4EEB-8A7B-8066352EEC44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.DTO", "NSFlights.DTO\NSFlights.DTO.csproj", "{1D9F8BE6-FAA2-47CF-BAC8-24A86010D950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NSFlights.Model", "NSFlights.Model\NSFlights.Model.csproj", "{45296D54-4AFF-4B75-9F1E-AD9843553453}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D2EC02F-55AE-4E60-B046-FF36F818DEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2EC02F-55AE-4E60-B046-FF36F818DEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2EC02F-55AE-4E60-B046-FF36F818DEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2EC02F-55AE-4E60-B046-FF36F818DEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A04F71-8330-4D00-8F4E-F320B101ABC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A04F71-8330-4D00-8F4E-F320B101ABC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A04F71-8330-4D00-8F4E-F320B101ABC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A04F71-8330-4D00-8F4E-F320B101ABC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4B0FB5-7BC1-47F0-9966-48F740FEDEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4B0FB5-7BC1-47F0-9966-48F740FEDEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4B0FB5-7BC1-47F0-9966-48F740FEDEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4B0FB5-7BC1-47F0-9966-48F740FEDEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C29CC4-948E-4EEB-8A7B-8066352EEC44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C29CC4-948E-4EEB-8A7B-8066352EEC44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C29CC4-948E-4EEB-8A7B-8066352EEC44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C29CC4-948E-4EEB-8A7B-8066352EEC44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9F8BE6-FAA2-47CF-BAC8-24A86010D950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9F8BE6-FAA2-47CF-BAC8-24A86010D950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9F8BE6-FAA2-47CF-BAC8-24A86010D950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9F8BE6-FAA2-47CF-BAC8-24A86010D950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45296D54-4AFF-4B75-9F1E-AD9843553453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45296D54-4AFF-4B75-9F1E-AD9843553453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45296D54-4AFF-4B75-9F1E-AD9843553453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45296D54-4AFF-4B75-9F1E-AD9843553453}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27C5E991-18C2-437B-A00F-96222F6A772F}
+	EndGlobalSection
+EndGlobal
