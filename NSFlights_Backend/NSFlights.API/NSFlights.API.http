@@ -1,0 +1,6 @@
+@NSFlights.API_HostAddress = http://localhost:5269
+
+GET {{NSFlights.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
