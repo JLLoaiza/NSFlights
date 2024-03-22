@@ -1,11 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000;
+# Node.js - Express Aux API
 
-app.use(express.json({ limit: '25mb' }));
+This is an auxiliar API to replace the recruiting API in maintenance (https://recruiting-api.newshore.es/api/flights)
 
-app.get('/', (req, res) => {
-    res.json([
+There are the following airport options:
+
+# Data
+
+```
+[
         {
             "DepartureStation": "MZL",
             "ArrivalStation": "JFK",
@@ -146,9 +148,15 @@ app.get('/', (req, res) => {
             "FlightNumber": "8400",
             "Price": 300.0
         }
-    ]);
-})
+    ]
+```
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+# How to start
+
+```sh
+# install dependencies
+npm install
+
+# run on port 4000
+node index.js
+```
