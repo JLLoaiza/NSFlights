@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <table *ngIf="!fetchingFlights" class="table table-striped shadow-sm">
+    <table *ngIf="!fetchingFlights && flights && flights.flights.length > 0" class="table table-striped shadow-sm">
         <thead>
             <tr>
                 <th scope="col">Flight #</th>
@@ -20,32 +20,23 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td></td>
+            <tr *ngFor="let flight of flights.flights; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{flight.origin}}</td>
+                <td>{{flight.destination}}</td>
+                <td>{{flight.transport.flightCarrier}}</td>
+                <td>{{flight.transport.flightNumber}}</td>
+                <td>{{flight.price}}</td>
             </tr>
         </tbody>
         <thead>
             <tr>
-                <th scope="col">Flight #</th>
-                <th scope="col">Origin</th>
-                <th scope="col">Destination</th>
-                <th scope="col">Flight carrier</th>
-                <th scope="col">Flight number</th>
-                <th scope="col">Price</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">{{flights.price}}</th>
             </tr>
         </thead>
     </table>

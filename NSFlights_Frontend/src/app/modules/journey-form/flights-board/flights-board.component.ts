@@ -41,7 +41,7 @@ export class FlightsBoardComponent implements OnInit {
       .subscribe(data => {
         this.fetchingFlights = false;
 
-        console.log(data.value);
+        this.flights = data.value;
       });
   }
 }
