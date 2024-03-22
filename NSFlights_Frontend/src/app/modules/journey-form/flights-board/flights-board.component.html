@@ -31,7 +31,7 @@
         </tbody>
         <thead>
             <tr>
-                <th scope="col"></th>
+                <th scope="col">TOTAL</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -40,4 +40,20 @@
             </tr>
         </thead>
     </table>
+
+    <div *ngIf="!fetchingFlights && flights && flights.flights.length == 0">
+        <div class="d-flex justify-content-center align-items-center py-3">
+            <div class="w-25">
+                <p class="fs-4">There are no flights available.</p>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="!fetchingFlights && !flights">
+        <div class="d-flex justify-content-center align-items-center py-3">
+            <div class="w-25">
+                <p class="fs-4">An error happened.</p>
+            </div>
+        </div>
+    </div>
 </div>
