@@ -13,7 +13,7 @@ export class FligthsService {
 
   constructor(private http: HttpClient) { }
 
-  fetchJourneyPath(origin: number, destination: number, maxFlights?: number) {
+  fetchJourneyPath(origin: string, destination: string, maxFlights?: number) {
     let service = 'api/Flight/Journey';
 
     let params: HttpParams = new HttpParams()
@@ -24,6 +24,6 @@ export class FligthsService {
       params = params.set('maxFlights', maxFlights);
     }
 
-    return this.http.get<APIResponse<Journey[]>>(`${this.url}/${service}`, { params });
+    return this.http.get<APIResponse<Journey>>(`${this.url}/${service}`, { params });
   }
 }

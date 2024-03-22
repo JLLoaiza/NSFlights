@@ -1,1 +1,52 @@
-<p>flights-board works!</p>
+<div class="flights-board">
+    <div *ngIf="fetchingFlights" class="d-flex justify-content-center">
+        <div class="spinner-grow text-success mx-3 mt-5" role="status">
+        </div>
+        <div class="spinner-grow text-success mx-3 mt-5" role="status">
+        </div>
+        <div class="spinner-grow text-success mx-3 mt-5" role="status">
+        </div>
+    </div>
+
+    <table *ngIf="!fetchingFlights" class="table table-striped shadow-sm">
+        <thead>
+            <tr>
+                <th scope="col">Flight #</th>
+                <th scope="col">Origin</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Flight carrier</th>
+                <th scope="col">Flight number</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th scope="col">Flight #</th>
+                <th scope="col">Origin</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Flight carrier</th>
+                <th scope="col">Flight number</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+    </table>
+</div>
