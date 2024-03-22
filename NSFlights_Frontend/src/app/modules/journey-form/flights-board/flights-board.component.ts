@@ -14,6 +14,7 @@ import { environment } from 'src/environments/environment';
 export class FlightsBoardComponent implements OnInit {
   origin: string = '';
   destination: string = '';
+  maxFlights?: number;
   fetchingFlights: boolean = false;
 
   actualCurrency: string = environment.actualCurrency;
@@ -42,6 +43,7 @@ export class FlightsBoardComponent implements OnInit {
       .subscribe((params) => {
         this.origin = String(params.get('origin'));
         this.destination = String(params.get('destination'));
+        this.maxFlights = Number(params.get('maxFlights'));
         this.fetchPath();
       });
   }
@@ -52,8 +54,9 @@ export class FlightsBoardComponent implements OnInit {
     if (!this.origin || !this.destination) {
       this.router.navigate(['..']);
     }
+    
 
-    this.flightsService.fetchJourneyPath(this.origin, this.destination)
+    this.flightsService.fetchJourneyPath(this.origin, this.destination, this.maxFlights == 0 ? undefined : this.maxFlights)
       .subscribe(data => {
         this.fetchingFlights = false;
 
