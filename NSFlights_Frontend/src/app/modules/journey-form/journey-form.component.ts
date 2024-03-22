@@ -21,6 +21,7 @@ export class JourneyFormComponent {
     this.destinationForm = this.formBuilder.group({
       origin: ['', Validators.compose([Validators.required, Validators.maxLength(3), Validators.minLength(3)])],
       destination: ['', Validators.compose([Validators.required, Validators.maxLength(3), Validators.minLength(3)])],
+      maxFlights: [],
     });
   }
 
@@ -39,9 +40,8 @@ export class JourneyFormComponent {
 
   isNotSameOrigin() {
     return (
-      this.destinationForm.value['destination'] != ''
-      && this.destinationForm.value['origin'] != ''
-    ) && this.destinationForm.value['destination'] != this.destinationForm.value['origin'];
+      this.destinationForm.value['destination'] == ''
+    ) || this.destinationForm.value['destination'] != this.destinationForm.value['origin'];
   }
 
   errorsFromFormField(field: string) {

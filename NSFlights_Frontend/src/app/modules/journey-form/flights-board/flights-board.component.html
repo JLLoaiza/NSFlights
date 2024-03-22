@@ -8,6 +8,18 @@
         </div>
     </div>
 
+    <div *ngIf="!fetchingFlights && flights && flights.flights.length > 0" class="row">
+        <div class="col-3 me-3 mb-3">
+            <label class="fs-5" for="origin">Currency</label>
+            <select [(ngModel)]="exchangeCurrency"
+                class="form-control form-control-solid form-control-lg">
+                <option *ngFor="let currency of currencies" [value]="currency.key"
+                    [selected]="currency.key == actualCurrency">{{currency.name}}
+                </option>
+            </select>
+        </div>
+    </div>
+
     <table *ngIf="!fetchingFlights && flights && flights.flights.length > 0" class="table table-striped shadow-sm">
         <thead>
             <tr>
@@ -26,7 +38,7 @@
                 <td>{{flight.destination}}</td>
                 <td>{{flight.transport.flightCarrier}}</td>
                 <td>{{flight.transport.flightNumber}}</td>
-                <td>{{flight.price}}</td>
+                <td>{{exhangeCurrency(flight.price)}} {{getISOCurrency()}}</td>
             </tr>
         </tbody>
         <thead>
@@ -36,7 +48,7 @@
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th scope="col">{{flights.price}}</th>
+                <th scope="col">{{exhangeCurrency(flights.price)}} {{getISOCurrency()}}</th>
             </tr>
         </thead>
     </table>
