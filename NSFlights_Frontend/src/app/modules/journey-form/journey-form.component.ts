@@ -51,5 +51,10 @@ export class JourneyFormComponent {
 
   searchFlights() {
     this.submitted = true;
+
+    if (this.destinationForm.valid && this.isNotSameOrigin()) {
+      this.router.navigate(['/flights'],
+        { queryParams: this.destinationForm.value });
+    }
   }
 }
