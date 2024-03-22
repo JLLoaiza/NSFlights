@@ -1,6 +1,6 @@
 # Node.js - Express Aux API
 
-This is an auxiliar API to replace the recruiting API in maintenance (https://recruiting-api.newshore.es/api/flights)
+This is an auxiliar API to replace the recruiting [API in maintenance](https://recruiting-api.newshore.es/api/flights)
 
 There are the following airport options:
 
