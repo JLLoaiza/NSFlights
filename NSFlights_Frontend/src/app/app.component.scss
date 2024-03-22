@@ -1,0 +1,29 @@
+.title {
+    font-size: 4.7vw;
+}
+
+.title-logo {
+    width: 15%;
+    height: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+
+.img-credits {
+    color: white;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.img-credits:hover {
+    color: lightgray;
+}
